@@ -41,7 +41,7 @@
                         <label asp-for="Gender"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="Gender" class="form-control" />
+                       <!-- <input asp-for="Gender" class="form-control" />-->
                         <span asp-validation-for="Gender" class="text-danger"></span>
                         <select asp-for="Gender" class="form-select size=3 mb-6" aria-label=".form-select-md example">
                             <option selected>Choose your gender</option>
@@ -57,7 +57,7 @@
                         <label asp-for="DateOfBirth"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="DateOfBirth" class="form-control" />
+                        <input asp-for="DateOfBirth" type="number" class="form-control" />
                         <span asp-validation-for="DateOfBirth" class="text-danger"></span>
                     </div>
                 </div>
@@ -77,8 +77,13 @@
                         <label asp-for="Offer"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="Offer" class="form-control" />
-                        <span asp-validation-for="Offer" class="text-danger"></span>
+                        <select asp-for="Offer" class="form-select size=3 mb-6" aria-label=".form-select-md example">
+                            <option selected>Choose your offer</option>
+                            <option value="1">Offer 1</option>
+                            <option value="2">Offer 2</option>
+                            <option value="3">Offer 3</option>
+                            <option value="3">Offer 4</option>
+                        </select>
                     </div>
                 </div>
 
