@@ -1,11 +1,111 @@
-﻿
+﻿<!-- This page is responsible for booking data
+
+    -->
 @{
     ViewData["Title"] = "BookingForm";
 }
 
-<h1>BookingForm</h1>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@model ProgrammingProjectApp.Models.BookingForm
+
+<form method="post" asp-action="Create">
+    <div class="border p-3">
+        @*<div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
+        <div class="form-group row">
+            <h2 class="text-info pl-3">Book your holiday</h2>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Name"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Surname"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Surname" class="form-control" />
+                        <span asp-validation-for="Surname" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Gender"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Gender" class="form-control" />
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                        <select asp-for="Gender" class="form-select size=3 mb-6" aria-label=".form-select-md example">
+                            <option selected>Choose your gender</option>
+                            <option value="1">Female</option>
+                            <option value="2">Male</option>
+                            <option value="3">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="DateOfBirth"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="DateOfBirth" class="form-control" />
+                        <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Email"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Offer"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Offer" class="form-control" />
+                        <span asp-validation-for="Offer" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group row">
+                    <div class="col-8 offset-4 row">
+
+                        <div class="col">
+                            <input type="submit" class="btn btn-info w-100" value="Book now!" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                @* Keep this empty *@
+            </div>
+        </div>
+    </div>
+
+</form>
+
+@section Scripts{
+
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+
+}
