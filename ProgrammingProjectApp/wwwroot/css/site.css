@@ -1,71 +1,97 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿/*.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }*/
 
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+#BGHead {
+    color: #322e2f;
+    background-color: #f8f9fa;
 }
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+#BGBottom {
+    color: #f8f9fa;
+    background-color: #322e2f;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+#BGFiled {
+    color: black;
+    background-color: #f8f4eb;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+#BGFiled2 {
+    color: black;
+    background-color: #768f9b;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
+#BGBody {
+    background: linear-gradient(to bottom, #ffffff 0%, #322e2f 100%);
+}
+
+h2 {
+    text-transform: capitalize;
+}
+
+    h2 a {
+        text-decoration: none;
+        color: black;
+    }
+
 html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    scroll-padding-top: 100vw;
 }
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+#Regions {
+    text-align: center;
+    letter-spacing: 0.1em;
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+#BGTrip {
+    background-color: rgb(233, 233, 233);
 }
 
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+a#Trips {
+    text-decoration: none;
+    color: black;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
+.nav-link.btn {
+    text-decoration: none;
+    color: #322e2f;
 }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+.navbar-brand {
+    color: #322e2f;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+
+#BGPowerblue {
+    background-color: powderblue;
+}
+
+div.col-sm-6 {
+    height: 400px;
+    margin-bottom: 25px;
+    float: left;
+}
+
+div.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+p.beginning {
+    margin-top: 25px;
 }
