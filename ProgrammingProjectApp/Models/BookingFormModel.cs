@@ -13,9 +13,9 @@ namespace ProgrammingProjectApp.Models
         [System.ComponentModel.DataAnnotations.Key]
         [Required]
         public int Id { get; set; }
-        [Required]
+        [Required, RegularExpression("[a-zA-Z]", ErrorMessage = "Name has to contain only letters")]
         public string Name { get; set; }
-        [Required]
+        [Required, RegularExpression("[a-zA-Z]", ErrorMessage ="Surname has to contain only letters")]
         public string Surname { get; set; }
         [Required]
         public string Gender { get; set; }

@@ -1,129 +1,135 @@
 ﻿<!-- This page is responsible for booking data
-
     -->
 @{
     ViewData["Title"] = "BookingForm";
 }
 <style>
-#BookingCSS {
-    margin-top: 20vh;
-    margin-bottom: 18vh;
-}
+    #BookingCSS {
+        margin-top: 20vh;
+        margin-bottom: 18vh;
+    }
+    input.btn-info {
+        margin-top: 15px;
+    }
 </style>
 
 @model ProgrammingProjectApp.Models.BookingForm
 
-<<<<<<< HEAD
 <form method="post">
     <div class="border p-3">
-        @*<div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="form-group row">
             <h2 class="text-info pl-3">Book your holiday</h2>
-=======
-<main id="BookingCSS">
-<form method="post" asp-action="Create">
-        <div class="form-group rounded-3 my-3 row" id="BGFiled">
-            <h2 class="pl-3" align="center"><strong>Book your holiday</strong></h2>
->>>>>>> 7f4bf915e8080fd0a359104ac3b3909ce3507652
-        </div>
-    <div class="p-3 rounded-3" id="BGFiled">
-        @*<div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
-
-        <div class="row">
-            <div class="col-8">
-                <div class="form-group row">
-                    <div class="col-4 my-2">
-                        <label asp-for="Name"></label>
-                    </div>
-                    <div class="col-8">
-                        <input asp-for="Name" class="form-control" />
-                        <span asp-validation-for="Name" class="text-danger"></span>
-                    </div>
-
-                </div>
-                <div class="form-group row">
-                    <div class="col-4 mt-2 mb-1">
-                        <label asp-for="Surname"></label>
-                    </div>
-                    <div class="col-8 mt-2 mb-1">
-                        <input asp-for="Surname" class="form-control" />
-                        <span asp-validation-for="Surname" class="text-danger"></span>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-4 mb-1 mt-2">
-                        <label asp-for="Gender"></label>
-                    </div>
-                    <div class="col-8 mb-2 mt-1">
-                        <!-- <input asp-for="Gender" class="form-control" />-->
-                        <span asp-validation-for="Gender" class="text-danger"></span>
-                        <select asp-for="Gender" class="form-select size=3 mb-6" aria-label=".form-select-md example">
-                            <option selected>Choose your gender</option>
-                            <option value="1">Female</option>
-                            <option value="2">Male</option>
-                            <option value="3">Other</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-4 my-2">
-                        <label asp-for="DateOfBirth"></label>
-                    </div>
-                    <div class="col-8">
-                        <input asp-for="DateOfBirth" type="number" class="form-control" />
-                        <span asp-validation-for="DateOfBirth" class="text-danger"></span>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-4 mt-3 mb-2">
-                        <label asp-for="Email"></label>
-                    </div>
-                    <div class="col-8 mt-2 mb-1">
-                        <input asp-for="Email" class="form-control" />
-                        <span asp-validation-for="Email" class="text-danger"></span>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-4 mb-2 mt-1">
-                        <label asp-for="Offer"></label>
-                    </div>
-                    <div class="col-8 mb-2 mt-1">
-                        <select asp-for="Offer" class="form-select size=3 mb-6" aria-label=".form-select-md example">
-                            <option selected>Choose your offer</option>
-                            <option value="1">Offer 1</option>
-                            <option value="2">Offer 2</option>
-                            <option value="3">Offer 3</option>
-                            <option value="3">Offer 4</option>
-                        </select>
-                    </div>
-                </div>
-
-
-
-
-                <div class="form-group row">
-                    <div class="col-8 offset-4 row my-2">
-                        <div class="col">
-                            <input type="submit" class="btn btn-info w-100" value="Book now!" />
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                @* Keep this empty *@
-            </div>
         </div>
     </div>
+</form>
+ <main id="BookingCSS">
+                
+
+    <form method="post">
+                <div class="form-group rounded-3 my-3 row" id="BGFiled">
+                    <h2 class="pl-3" align="center"><strong>Book your holiday</strong></h2>
+                </div>
+                <div class="p-3 rounded-3" id="BGFiled">
+                    @*<div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
+
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="form-group row">
+                                <div class="col-4 my-2">
+                                    <label asp-for="Name"></label>
+                                </div>
+                                <div class="col-8">
+                                    <input asp-for="Name" class="form-control" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-4 mt-2 mb-1">
+                                    <label asp-for="Surname"></label>
+                                </div>
+                                <div class="col-8 mt-2 mb-1">
+                                    <input asp-for="Surname" class="form-control" />
+                                    <span asp-validation-for="Surname" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-4 mb-1 mt-2">
+                                    <label asp-for="Gender"></label>
+                                </div>
+                                <div class="col-8 mb-2 mt-1">
+                                    <!-- <input asp-for="Gender" class="form-control" />-->
+                                    <span asp-validation-for="Gender" class="text-danger"></span>
+                                    <select asp-for="Gender" class="form-select size=3 mb-6" aria-label=".form-select-md example">
+                                        <option value="" disabled selected hidden>Choose your gender</option>
+                                        <option value="1">Female</option>
+                                        <option value="2">Male</option>
+                                        <option value="3">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-4 my-2">
+                                    <label asp-for="DateOfBirth"></label>
+                                </div>
+                                <div class="col-8">
+                                    <input asp-for="DateOfBirth" type="date" class="form-control" />
+                                    <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-4 mt-3 mb-2">
+                                    <label asp-for="Email"></label>
+                                </div>
+                                <div class="col-8 mt-2 mb-1">
+                                    <input asp-for="Email" type="email" class="form-control" />
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-4 mb-2 mt-1">
+                                    <label asp-for="Offer"></label>
+                                </div>
+                                <div class="col-8 mb-2 mt-1">
+                                    <span asp-validation-for="Gender" class="text-danger"></span>
+                                    <select asp-for="Offer" class="form-select size=3 mb-6" aria-label=".form-select-md example">
+                                        <option value="" disabled selected hidden>Choose your offer</option>
+                                        <option value="1">Offer 1</option>
+                                        <option value="2">Offer 2</option>
+                                        <option value="3">Offer 3</option>
+                                        <option value="3">Offer 4</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="form-group row">
+                                <div class="col-8 offset-4 row my-2">
+                                    <div class="col">
+                                        <input type="submit" class="btn btn-info w-100" value="Book now!" />
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            @* Keep this empty *@
+                        </div>
+                    </div>
+                </div>
 
 </form>
-</main>
-<div class="container" ></div>
+
+            </main>
+<div class="container"></div>
 @section Scripts{
 
     @{
